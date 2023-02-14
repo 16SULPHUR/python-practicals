@@ -5,44 +5,50 @@
  """
 
 
-my_dict={"std_name":"Ankit Patil",
-    "std_branch":"CSE",
-    "std_DOB":"15/03/2005"}
-print(my_dict)
+My_Dictionary={"Stdudent_Name":"Ankit Patil",
+    "Stdudent_Branch":"CSE",
+    "Stdudent_DOB":"15/03/2005"
+}
 
-print ("Update Dictionary")
-my_dict["std_name"]="Shivam Maisuriya"
-print(my_dict)
+# type(My_Dictionary)
+print("1) DataType of My_Dictionary is : {0}\n".format(type(My_Dictionary)))
 
-print ("Delete  ")
-del my_dict["std_DOB"]
-print(my_dict)
+# My_Dictionary
+print("2) My_Dictionary : {0}\n".format(My_Dictionary))
+
+# My_Dictionary["Stdudent_Name"]="Shivam Maisuriya"
+My_Dictionary["Stdudent_Name"]="Shivam Maisuriya"
+print("3) After Updating student's name to \"Shivam Maisuriya\"\n=> Now My_Dictionary is : {0}\n".format(My_Dictionary))
+
+# My_Dictionary["Stdudent_Name"]="Shivam Maisuriya"
+# del My_Dictionary['Student_DOB']
+# print("4) After Deleting student's DOB\n=> Now My_Dictionary is : {0}\n".format(My_Dictionary))
 
 
-print ("Copy Dictionary")
-my_dict1=my_dict.copy()
-print(my_dict1)
+# My_Dictionary=My_Dictionary.copy()
+Temp_Dictionary=My_Dictionary.copy()
+print("5) After coping \"My_Dictionary\" in \"Temp_Dictionary\"\n=> Now Temp_Dictionary is : {0}\n".format(Temp_Dictionary))
 
-print ("Get")
-my_dict_get = my_dict.get("std_name")
-print(my_dict_get)
+# My_Dictionary_get = My_Dictionary.get("Student_Name")
+# My_Dictionary_get = My_Dictionary.get('Student_Name')
+# print("6) Getting \"Student_Name\" from \"My_Dictionary\"\n=> Now Temp_Dictionary is : {0}\n".format(My_Dictionary_get))
 
 print ("Item")
-my_dict_items=my_dict.items()
-print(my_dict_items)
+My_Dictionary_items=My_Dictionary.items()
+print(My_Dictionary_items)
 
-print ("Values")
-my_dict_values= my_dict.values()
-print(my_dict_values)
+# print ("Values")
+# My_Dictionary_values= My_Dictionary.values()
+# print(My_Dictionary_values)
 
-print ("Keys")
-my_dict_keys= my_dict.keys()
-print(my_dict_keys)
+# print ("Keys")
+# My_Dictionary_keys= My_Dictionary.keys()
+# print(My_Dictionary_keys)
 
-print ("popitem")
-my_dict.popitem()
-print(my_dict)
+# print ("popitem")
+# My_Dictionary.popitem()
+# print(My_Dictionary)
 
 
-my_dict.clear()
-print(my_dict)
+# My_Dictionary.clear()
+# print(My_Dictionary)
